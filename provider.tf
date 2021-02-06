@@ -7,3 +7,8 @@ provider "azurerm" {
   #version = "~> 2.37.0"
   features {}
 }
+
+# Terraform Resource Block: Define a random pet resource
+resource "random_pet" "aksrandom" {
+  
+}
