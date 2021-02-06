@@ -10,3 +10,12 @@ output "resource_group_id" {
 output "resource_group_name" {
   value=azurerm_resource_group.aks-rg2.name
 }
+
+# Azure AKS versions Datasource output
+output "versions" {
+  value = data.azurerm_kubernetes_service_versions.current.versions
+}
+
+output "latest_version" {
+  value = data.azurerm_kubernetes_service_versions.current.latest_version
+} 
