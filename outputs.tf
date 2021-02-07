@@ -25,6 +25,10 @@ output "azure_ad_group" {
   value = azuread_group.aks_administrators.id
 }
 
+output "azure_ad_group_objectid" {
+  value = azuread_group.aks_administrators.object_id
+}
+
 # Azure AKS Outputs
 
 output "aks_cluster_id" {
